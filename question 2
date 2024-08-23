@@ -1,0 +1,27 @@
+// Base class Vehicle
+class Vehicle {
+    // Method to be overridden in the subclass
+    public void drive() {
+        System.out.println("Vehicle is driving");
+    }
+}
+
+// Subclass Car that overrides the drive method
+class Car extends Vehicle {
+    // Override the drive method
+    @Override
+    public void drive() {
+        System.out.println("Repairing a car");
+    }
+}
+
+// Main class to test the functionality
+public class Main {
+    public static void main(String[] args) {
+        // Create an instance of Car
+        Car myCar = new Car();
+        
+        // Call the drive method
+        myCar.drive(); // Output: Repairing a car
+    }
+}
